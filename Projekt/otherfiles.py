@@ -81,4 +81,10 @@ encrypt_decrypt_button.pack()
 success_label = tk.Label(main_frame, text="", fg="green")
 success_label.pack()
 
+btn_frame = tk.Frame(main_frame)
+btn_frame.pack(pady=10)
+
+cancel_btn = tk.Button(btn_frame, text="Anullo", width=15, command=root.destroy)
+cancel_btn.pack(side=tk.LEFT, padx=10)
+
 root.mainloop()

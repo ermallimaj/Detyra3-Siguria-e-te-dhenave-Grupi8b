@@ -116,4 +116,10 @@ decrypted_content.pack(pady=5)
 decrypted_content.config(yscrollcommand=scrollbar.set)
 scrollbar.config(command=decrypted_content.yview)
 
+btn_frame = tk.Frame(main_frame)
+btn_frame.pack(pady=10)
+
+cancel_btn = tk.Button(btn_frame, text="Anullo", width=15, command=root.destroy)
+cancel_btn.pack(side=tk.LEFT, padx=10)
+
 root.mainloop()
